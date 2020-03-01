@@ -11,3 +11,5 @@ If it is available you can add it to your favorite list or you can remove it fro
 	2. Run npm install in web-ui folder.
 	3. Start web-ui project by using npm start.
   	4. Search domain name and add to favorites
+	
+<img src="https://raw.githubusercontent.com/caglardurmus/DomainCase/master/DomainCase.gif" alt="demo" style="max-width:100%;">
