@@ -60,7 +60,10 @@ function Home(props) {
         setShowAlert(true);
     };
 
-    const alertOnClose = () => setShowAlert(false);
+    const alertOnClose = () => {
+        setShowAlert(false);
+        setCanBuy(false)
+    };
 
     const searchValue = async () => {
         if (search == '') {
@@ -92,7 +95,7 @@ function Home(props) {
                     makeAlert('Error!', error)
                 }
             );
-        await setSpinner(false);
+        await setTimeout(() => setSpinner(false), 500)
     };
 
     const renderSpinner = () => {
@@ -115,6 +118,9 @@ function Home(props) {
     }
 
     function renderMain() {
+        if (spinner) {
+            return null;
+        }
         if (!canBuy && domainName != '' && expirationDate != '') {
             return (
                 <Paper className={classes.midContainer}>
