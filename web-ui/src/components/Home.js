@@ -85,6 +85,8 @@ function Home(props) {
                             setDomainName(result.Data.DomainName);
                             setExpirationDate(result.Data.ExpirationDate);
                         } else {
+                            setDomainName('');
+                            setExpirationDate('');
                             setCanBuy(true);
                         }
                     } else {
