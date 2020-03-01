@@ -8,5 +8,6 @@ If it is available you can add it to your favorite list or you can remove it fro
 
 # To run project
 	1. Start api project by using Visiual Studio 2019.
-	2. Start web-ui project by using npm start.
-  	3. Search domain name and add to favorites
+	2. Run npm install in web-ui folder.
+	3. Start web-ui project by using npm start.
+  	4. Search domain name and add to favorites
